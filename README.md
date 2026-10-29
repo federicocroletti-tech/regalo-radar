@@ -28,10 +28,10 @@ npm run lint
 npm run build
 ```
 
-Il deploy GitHub Pages è configurato via GitHub Actions. La base path di
-produzione è `/regalo-radar/`; l'URL pubblico verrà indicato dopo il primo
-deploy riuscito. Questa shell dimostrativa non salva ancora dati e non è ancora
-installabile come PWA.
+Il deploy GitHub Pages è configurato via GitHub Actions. La demo pubblica è
+disponibile su [federicocroletti-tech.github.io/regalo-radar](https://federicocroletti-tech.github.io/regalo-radar/)
+e usa la base path `/regalo-radar/`. Questa shell dimostrativa non salva ancora
+dati e non è ancora installabile come PWA.
 
 ## Documentazione
 

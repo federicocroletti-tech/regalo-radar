@@ -22,6 +22,8 @@ Step 1 sono pianificate, non implementate.
 - [x] Creare dashboard con dati mock esplicitamente etichettati come demo.
 - [x] Verificare localmente lint, test, build e formattazione; aggiornare i
       comandi README.
+- [x] Configurare GitHub Actions per CI e deploy su GitHub Pages; verificare la
+      demo pubblica.
 
 ## Step 3 — Persistenza e flusso base
 
