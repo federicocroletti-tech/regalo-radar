@@ -14,13 +14,14 @@ Step 1 sono pianificate, non implementate.
 
 ## Step 2 — Workspace e shell
 
-- [ ] Inizializzare Nx e app Angular standalone con TypeScript strict.
-- [ ] Configurare ESLint, Prettier, test runner e build; integrare controlli CI
+- [x] Inizializzare Nx e app Angular standalone con TypeScript strict.
+- [x] Configurare ESLint, Prettier, test runner e build; integrare controlli CI
       essenziali.
-- [ ] Configurare routing, layout responsive, tema chiaro/scuro e token CSS.
-- [ ] Realizzare shell accessibile da tastiera e struttura navigabile.
-- [ ] Creare dashboard con dati mock esplicitamente etichettati come demo.
-- [ ] Verificare lint, test e build; aggiornare i comandi README.
+- [x] Configurare routing, layout responsive, tema chiaro/scuro e token CSS.
+- [x] Realizzare shell accessibile da tastiera e struttura navigabile.
+- [x] Creare dashboard con dati mock esplicitamente etichettati come demo.
+- [x] Verificare localmente lint, test, build e formattazione; aggiornare i
+      comandi README.
 
 ## Step 3 — Persistenza e flusso base
 

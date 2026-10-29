@@ -6,24 +6,32 @@ originali: l'utente apre l'annuncio e compie personalmente qualsiasi azione.
 
 ## Stato
 
-Questo repository contiene gli artefatti di Step 1: architettura MVP, ADR sulle
-fonti, struttura Nx proposta e backlog. Il workspace applicativo non è ancora
-stato inizializzato. Implementazione e configurazione arrivano nei passi
-successivi, nell'ordine concordato.
+Step 1 (architettura e ADR) e Step 2 (workspace Nx e shell Angular con
+dashboard dimostrativa) sono completati. La dashboard usa esclusivamente dati
+mock esplicitamente indicati: inserimento, persistenza, PWA/share target e
+classificazione saranno realizzati nei passi successivi.
 
 ## Avvio locale
 
-Non è ancora possibile avviare l'app: Step 1 non genera codice eseguibile.
-Dopo Step 2, dalla radice di questo progetto:
+Richiede Node.js 22 e npm 10:
 
 ```powershell
-npm install
-npx nx serve web
+npm ci
+npm start
 ```
 
-Il comando effettivo verrà verificato e aggiornato quando sarà creato il
-workspace Nx. I dati dell'MVP saranno locali al browser tramite IndexedDB; la
-disinstallazione o la cancellazione dei dati del browser può rimuoverli.
+Comandi di verifica e build:
+
+```powershell
+npm test
+npm run lint
+npm run build
+```
+
+Il deploy GitHub Pages è configurato via GitHub Actions. La base path di
+produzione è `/regalo-radar/`; l'URL pubblico verrà indicato dopo il primo
+deploy riuscito. Questa shell dimostrativa non salva ancora dati e non è ancora
+installabile come PWA.
 
 ## Documentazione
 
