@@ -17,7 +17,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
           <a routerLink="/" aria-current="page">Dashboard</a>
           <span class="coming-soon">Inbox <span>prossimamente</span></span>
         </nav>
-        <span class="local-badge">Demo locale</span>
+        <span class="local-badge">Dati solo su questo dispositivo</span>
       </header>
 
       <main id="main-content">
@@ -25,8 +25,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       </main>
 
       <footer>
-        <span>I dati mostrati sono esempi dimostrativi.</span>
-        <span>Nessuna interazione automatizzata con siti esterni.</span>
+        <span>Le tue segnalazioni sono salvate solo in questo browser.</span>
+        <span>Nessun contenuto viene letto o aggiornato automaticamente dai siti esterni.</span>
       </footer>
     </div>
   `,

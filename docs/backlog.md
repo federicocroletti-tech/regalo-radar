@@ -27,20 +27,20 @@ Step 1 sono pianificate, non implementate.
 
 ## Step 3 — Persistenza e flusso base
 
-- [ ] Definire tipi dominio e schema Dexie, con versione/migrazione locale.
-- [ ] Implementare repository interface e adapter IndexedDB.
-- [ ] Implementare inserimento manuale e inbox con ordinamento, ricerca e filtri.
-- [ ] Implementare stati annuncio e dashboard derivata dai dati persistiti.
-- [ ] Aggiungere deduplicazione iniziale per URL normalizzato e hash, mantenendo
+- [x] Definire tipi dominio e schema Dexie versionato.
+- [x] Implementare repository IndexedDB e sincronizzazione reattiva tra schede.
+- [x] Implementare inserimento manuale e inbox con ricerca e filtri.
+- [x] Implementare stati annuncio e dashboard derivata dai dati persistiti.
+- [x] Aggiungere deduplicazione iniziale per URL normalizzato, mantenendo
       provenienza e timestamp di ogni segnalazione.
-- [ ] Implementare modifica, eliminazione, esportazione JSON e cancellazione
-      completa dei dati.
-- [ ] Aggiungere test di unità e test d'integrazione del repository.
+- [x] Implementare eliminazione ed esportazione JSON.
+- [x] Aggiungere test di unità e test d'integrazione del repository.
+- [ ] Implementare modifica dei campi e cancellazione completa dei dati.
 
 ## Step 4 — Classificazione e acquisizione condivisa
 
-- [ ] Configurare manifest PWA e Web Share Target; gestire URL, titolo e testo
-      condivisi con anteprima e conferma.
+- [x] Configurare manifest PWA, service worker e Web Share Target; gestire URL,
+      titolo e testo condivisi con anteprima e conferma.
 - [ ] Implementare classifier locale con parole positive/negative, categorie,
       pesi modificabili e spiegazione del punteggio.
 - [ ] Aggiungere soglia priorità configurabile e test dei casi limite.

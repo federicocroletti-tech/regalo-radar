@@ -6,10 +6,21 @@ originali: l'utente apre l'annuncio e compie personalmente qualsiasi azione.
 
 ## Stato
 
-Step 1 (architettura e ADR) e Step 2 (workspace Nx e shell Angular con
-dashboard dimostrativa) sono completati. La dashboard usa esclusivamente dati
-mock esplicitamente indicati: inserimento, persistenza, PWA/share target e
-classificazione saranno realizzati nei passi successivi.
+L'app consente di aggiungere annunci manualmente o condividerli dal browser,
+salvarli in IndexedDB, cercarli, filtrarli per stato, archiviare/eliminare
+segnalazioni ed esportare i dati in JSON. La dashboard mostra soltanto dati
+inseriti dall'utente, aggiornati immediatamente nella sessione e tra schede
+aperte dello stesso browser.
+
+Il manifest abilita installazione e condivisione verso l'app nei browser
+compatibili; il service worker rende disponibile la shell offline dopo il
+primo caricamento riuscito. I dati restano nel browser/dispositivo e non sono
+sincronizzati tra dispositivi.
+
+**L'app non esegue scraping e non aggiorna lo stato degli annunci sui siti
+originali.** Titolo, testo e link condivisi sono una proposta da verificare e
+salvare esplicitamente; disponibilità e dettagli vanno controllati aprendo
+manualmente la fonte.
 
 ## Avvio locale
 
@@ -28,10 +39,10 @@ npm run lint
 npm run build
 ```
 
-Il deploy GitHub Pages è configurato via GitHub Actions. La demo pubblica è
-disponibile su [federicocroletti-tech.github.io/regalo-radar](https://federicocroletti-tech.github.io/regalo-radar/)
-e usa la base path `/regalo-radar/`. Questa shell dimostrativa non salva ancora
-dati e non è ancora installabile come PWA.
+Il deploy GitHub Pages è configurato via GitHub Actions. La versione pubblica
+usa la base path `/regalo-radar/`. L'installazione e la condivisione dipendono
+dalle funzionalità offerte dal browser; l'app non fornisce notifiche push con
+la PWA chiusa.
 
 ## Documentazione
 
